@@ -3,7 +3,7 @@ import fs from "fs";
 import matter from "gray-matter";
 
 const getPostMetadata = (): PostMetadata[] => {
-  const folder = "/posts/";
+  const folder = "public/posts/";
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
   // const slugs = markdownPosts.map((file) => file.replace(".md", ""));
